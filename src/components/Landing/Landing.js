@@ -9,7 +9,7 @@ const Landing = () => {
 
   return (
     <div className="landing-container">
-      <h1 className="heading1">Primary Text</h1>
+      {/* <h1 className="heading1">Primary Text</h1>
       <br />
 
       <h1 className="heading2">Secondary Text</h1>
@@ -27,7 +27,7 @@ const Landing = () => {
       <br />
       
       <p className="heading1">Changing image based on theme: </p>
-      <img src={theme === "light-theme" ? ImageBlack : ImageWhite} alt="" />
+      <img src={theme === "light-theme" ? ImageBlack : ImageWhite} alt="" /> */}
     </div>
   );
 };

@@ -8,10 +8,10 @@ const Header = () => {
 
     return (
         <div className="header-container">
-            <Logo class="header-logo" />
-            <div className="header-toggle-buttons">
+            {/* <Logo class="header-logo" /> */}
+            {/* <div className="header-toggle-buttons">
                 <button onClick={() => toggleTheme()}>{theme}</button>
-            </div>
+            </div> */}
         </div>
     );
 }

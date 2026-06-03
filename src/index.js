@@ -13,12 +13,12 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <Todo /> */}
-    {/* <ThemeProvider> */}
-      {/* <App /> */}
+    <ThemeProvider>
+      <App />
       {/* <Api /> */}
-    {/* </ThemeProvider> */}
+    </ThemeProvider>
     {/* <ThemeApp /> */}
-    <FormApp />
+    {/* <FormApp /> */}
   </React.StrictMode>
 );
 
