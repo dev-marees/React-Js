@@ -3,11 +3,22 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Todo from './components/todo'
+import Api from './components/api'
+import ThemeApp from './components/context'
+import FormApp from './components/Autofocus/Autofocus'
+import { ThemeProvider } from './Theme';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    {/* <Todo /> */}
+    {/* <ThemeProvider> */}
+      {/* <App /> */}
+      {/* <Api /> */}
+    {/* </ThemeProvider> */}
+    {/* <ThemeApp /> */}
+    <FormApp />
   </React.StrictMode>
 );
 

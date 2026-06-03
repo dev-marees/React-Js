@@ -1,23 +1,39 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from "./components/Header/Header";
+import Landing from "./components/Landing/Landing";
+import { ThemeContext } from "./Theme";
+
+import React, { useContext, useState } from "react";
 
 function App() {
+
+  const [count, setCount] = useState(0);
+
+  const incrementValue = () => {
+    setCount(count+1)
+  }
+
+  const decrementValue = () => {
+    if (count <= 0) {
+      return
+    }
+    setCount(count-1)
+  }
+
+  const resetValue = () => {
+    setCount(0)
+  }
+
+  const {theme} = useContext(ThemeContext)
+ 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={`App${theme}`}>
+      {/* <button onClick={incrementValue}>Increment</button>
+      <button onClick={decrementValue}>Decrement</button>
+      <button onClick={resetValue}>Reset</button> */}
+      {/* <h1>{count}</h1> */}
+        <Header/>
+        <Landing />
     </div>
   );
 }
