@@ -8,17 +8,19 @@ import Api from './components/api'
 import ThemeApp from './components/context'
 import FormApp from './components/Autofocus/Autofocus'
 import { ThemeProvider } from './Theme';
+// import ExpensiveCalc from './components/ExpensiveCalculations/ExpensiveCalc';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {/* <Todo /> */}
     <ThemeProvider>
+      <Todo />
       <App />
-      {/* <Api /> */}
+      {/* <ExpensiveCalc /> */}
+      <Api />
+      <ThemeApp />
+      <FormApp />
     </ThemeProvider>
-    {/* <ThemeApp /> */}
-    {/* <FormApp /> */}
   </React.StrictMode>
 );
 
